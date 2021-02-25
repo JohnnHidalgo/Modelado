@@ -19,8 +19,20 @@ public class Operaciones {
 	
 	public static Double getB2(ArrayList<Double> y, ArrayList<Double> x1, ArrayList<Double> x2) {
 		Double B2;
-		B2 = (getSumatoriaDeDosVariables(y, x2)-getSumatoriaDatoAlCuadrado(x2)+getSumatoriaDeDosVariables(y, x1)*getSumatoriaDeDosVariables(x1, x2))/(getSumatoriaDatoAlCuadrado(x1)*getSumatoriaDatoAlCuadrado(x2)+getSumatoriaDeDosVariablesAlCuadrado(x2, x1));
+		B2 = (getSumatoriaDeDosVariables(y, x2)-getSumatoriaDatoAlCuadrado(x2)-getSumatoriaDeDosVariables(y, x1)*getSumatoriaDeDosVariables(x1, x2))/(getSumatoriaDatoAlCuadrado(x1)*getSumatoriaDatoAlCuadrado(x2)+getSumatoriaDeDosVariablesAlCuadrado(x2, x1));
 		return B2;
+	}
+
+	public static Double getAlfa1(ArrayList<Double> y, ArrayList<Double> x1, ArrayList<Double> x2) {
+		Double Alfa1;
+		Alfa1 = (getSumatoriaDeDosVariablesEuler(y, x1)-getAlfa2(y,x1,x2)*getSumatoriaDeDosVariables(x1, x2))/(getSumatoriaDatoAlCuadrado(x1));
+		return Alfa1;
+	}
+	
+	public static Double getAlfa2(ArrayList<Double> y, ArrayList<Double> x1, ArrayList<Double> x2) {
+		Double Alfa2;
+		Alfa2 = (getSumatoriaDeDosVariablesEuler(y, x2)-getSumatoriaDatoAlCuadrado(x2)-getSumatoriaDeDosVariablesEuler(y, x1)*getSumatoriaDeDosVariables(x2, x1))/(getSumatoriaDatoAlCuadrado(x1)*getSumatoriaDatoAlCuadrado(x2)+getSumatoriaDeDosVariablesAlCuadrado(x2, x1));
+		return Alfa2;
 	}
 	
 	public static Double getPromedio(ArrayList<Double> datos) {	
@@ -64,7 +76,13 @@ public class Operaciones {
 		return suma;
 	}
 	
-	
+	public static Double getSumatoriaDeDosVariablesEuler(ArrayList<Double> datosy, ArrayList<Double> datosx) {	
+		Double suma= 0.0;
+		for (int i=0; i<datosy.size();i++) {
+			suma=suma+(Math.exp(datosy.get(i))*datosx.get(i));
+		}
+		return suma;
+	}	
 	
 	public static void getSistemaEcuaciones(ArrayList<Double> datosy, ArrayList<Double> datosx1, ArrayList<Double> datosx2, ArrayList<Double> datosx3) {	
 		System.out.println("Sistema de Ecuaciones");
@@ -105,17 +123,19 @@ public class Operaciones {
 	}
 	
 	public static void informeEjercicio7(ArrayList<Double> datosy, ArrayList<Double> datosx1, ArrayList<Double> datosx2) {
-		
 		System.out.println("B1 : " + getB1(datosy, datosx1, datosx2));
 		System.out.println("B2 : " + getB2(datosy, datosx1, datosx2));
 		System.out.println();	
 		System.out.println("y = " + getB1(datosy, datosx1, datosx2)+ " x1" + getB2(datosy, datosx1, datosx2)+" x2");
-		
 		System.out.println();		
 	}
+	
+	public static void informeEjercicio8(ArrayList<Double> datosy, ArrayList<Double> datosx1, ArrayList<Double> datosx2) {
+		System.out.println("Alfa1 : " + getAlfa1(datosy, datosx1, datosx2));
+		System.out.println("Alfa2 : " + getAlfa2(datosy, datosx1, datosx2));
+		System.out.println();	
+		System.out.println("e ^ y = " + "ln("+getAlfa1(datosy, datosx1, datosx2)+ " x1 " + getAlfa2(datosy, datosx1, datosx2)+" x2 )");
+		System.out.println();			
+	}
+	
 }
-
-/*
-	
-	
-*/
