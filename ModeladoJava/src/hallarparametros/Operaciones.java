@@ -220,8 +220,8 @@ public class Operaciones {
 	}
 
 	public static void informeEjercicio6(ArrayList<Double> datosy, ArrayList<Double> datosx, String y, String x) {	
-		System.out.print("Valor del parámetro con respecto a :  "+y+" / "+x+":  ");
 		System.out.println(Operaciones.getParametroY(datosy, datosx));
+		System.out.println("y = " + Operaciones.getSumatoriaDeDosVariables(datosy,datosx)+ " / "+ Operaciones.getSumatoriaDatoAlCuadrado(datosx));
 		System.out.println();		
 	}
 	
