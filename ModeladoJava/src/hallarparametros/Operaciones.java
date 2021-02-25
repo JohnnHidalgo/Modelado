@@ -45,6 +45,18 @@ public class Operaciones {
 		Alfa0 = (getPromedio(y)*getSumatoriaCoseno(x2)-getAlfa1Ejercicio4(y, x1, x2)*getSumatoriaDobleSeno(x1, x2))/(getSumatoriaSenoAlCuadrado(x2));
 		return Alfa0;
 	}
+	
+	public static Double getAlfa1Ejercicio2(ArrayList<Double> y, ArrayList<Double> x1) {
+		Double Alfa1;
+		Alfa1 = (getSumatoriaDeDosVariables(y, x1)-getAlfa0Ejercicio2(y, x1))/(getSumatoriaDatoAlCuadrado(x1));
+		return Alfa1;
+	}
+	
+	public static Double getAlfa0Ejercicio2(ArrayList<Double> y, ArrayList<Double> x1) {
+		Double Alfa0;
+		Alfa0 = (getSumatoriaUnaVariable(y)*getSumatoriaUnaVariable(x1)-getSumatoriaDeDosVariables(y, x1))/(getSumatoriaUnaVariable(x1)+getSumatoriaDatoAlCuadrado(x1)*getSumatoriaUnaVariable(x1));
+		return Alfa0;
+	}
 		
 	public static Double getSumatoriaCoseno(ArrayList<Double> datos) {	
 		Double suma= 0.0;
@@ -177,6 +189,14 @@ public class Operaciones {
 	
 	
 	
+	public static void informeEjercicio2(ArrayList<Double> datosy, ArrayList<Double> datosx1) {	
+		System.out.println("Alfa0 : " + getAlfa0Ejercicio2(datosy, datosx1));
+		System.out.println("Alfa1 : " + getAlfa1Ejercicio2(datosy, datosx1));
+		System.out.println();	
+		System.out.println("y = 1 / " + getAlfa0Ejercicio2(datosy, datosx1)+ "  + " + getAlfa1Ejercicio2(datosy, datosx1)+" x1");
+		System.out.println();	
+		System.out.println();		
+	}
 	
 
 	public static void informeEjercicio3(ArrayList<Double> datosy, ArrayList<Double> datosx1) {	
