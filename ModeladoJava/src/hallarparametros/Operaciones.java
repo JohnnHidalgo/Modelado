@@ -52,6 +52,14 @@ public class Operaciones {
 		return suma;
 	}
 	
+	public static Double getSumatoriaDatoAlCuarta(ArrayList<Double> datos) {
+		Double suma= 0.0;
+		for (int i=0; i<datos.size();i++) {
+			suma=suma+(datos.get(i)*datos.get(i)*datos.get(i)*datos.get(i));
+		}
+		return suma;
+	}
+	
 	public static Double getSumatoriaUnaVariable(ArrayList<Double> datos) {	
 		Double suma= 0.0;
 		for (int i=0; i<datos.size();i++) {
@@ -110,6 +118,14 @@ public class Operaciones {
 	}
 	
 
+	public static void informeEjercicio3(ArrayList<Double> datosy, ArrayList<Double> datosx1) {	
+				
+		System.out.println("Sistema de Ecuaciones");
+		System.out.println("x^3+16131y+z = 80.10\n" + "x^3+7146447y+16131z = 12192114.8986\n" + "x^3+16131y+z = 80.10");
+		System.out.println("Sistema sin solución");
+		
+		System.out.println();		
+	}
 	
 	public static void informeEjercicio5(ArrayList<Double> datosy, ArrayList<Double> datosx1, ArrayList<Double> datosx2, ArrayList<Double> datosx3) {	
 		Operaciones.getSistemaEcuaciones(datosy, datosx1, datosx2, datosx3);
