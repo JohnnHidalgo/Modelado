@@ -16,7 +16,6 @@ public class Operaciones {
 		return B1;
 	}
 	
-	
 	public static Double getB2(ArrayList<Double> y, ArrayList<Double> x1, ArrayList<Double> x2) {
 		Double B2;
 		B2 = (getSumatoriaDeDosVariables(y, x2)-getSumatoriaDatoAlCuadrado(x2)-getSumatoriaDeDosVariables(y, x1)*getSumatoriaDeDosVariables(x1, x2))/(getSumatoriaDatoAlCuadrado(x1)*getSumatoriaDatoAlCuadrado(x2)+getSumatoriaDeDosVariablesAlCuadrado(x2, x1));
@@ -35,6 +34,66 @@ public class Operaciones {
 		return Alfa2;
 	}
 	
+	public static Double getAlfa1Ejercicio4(ArrayList<Double> y, ArrayList<Double> x1, ArrayList<Double> x2) {
+		Double Alfa1;
+		Alfa1 = (getPromedio(y)*getSumatoriaCoseno(x2)*getSumatoriaSenoAlCuadrado(x1)-getPromedio(y)*getSumatoriaSeno(x1))/(getSumatoriaSenoAlCuadrado(x1)*getSumatoriaCosenoAlCuadrado(x2)+getSumatoriaDobleCoseno(x1, x1)*getSumatoriaDobleSeno(x1, x1));
+		return Alfa1;
+	}
+	
+	public static Double getAlfa0Ejercicio4(ArrayList<Double> y, ArrayList<Double> x1, ArrayList<Double> x2) {
+		Double Alfa0;
+		Alfa0 = (getPromedio(y)*getSumatoriaCoseno(x2)-getAlfa1Ejercicio4(y, x1, x2)*getSumatoriaDobleSeno(x1, x2))/(getSumatoriaSenoAlCuadrado(x2));
+		return Alfa0;
+	}
+		
+	public static Double getSumatoriaCoseno(ArrayList<Double> datos) {	
+		Double suma= 0.0;
+		for (int i=0; i<datos.size();i++) {
+			suma=suma+Math.cos(datos.get(i));
+		}
+		return suma;
+	}
+	
+	public static Double getSumatoriaSeno(ArrayList<Double> datos) {	
+		Double suma= 0.0;
+		for (int i=0; i<datos.size();i++) {
+			suma=suma+Math.sin(datos.get(i));
+		}
+		return suma;
+	}
+	
+	public static Double getSumatoriaCosenoAlCuadrado(ArrayList<Double> datos) {	
+		Double suma= 0.0;
+		for (int i=0; i<datos.size();i++) {
+			suma=suma+Math.cos(datos.get(i)*datos.get(i));
+		}
+		return suma;
+	}
+	
+	public static Double getSumatoriaSenoAlCuadrado(ArrayList<Double> datos) {	
+		Double suma= 0.0;
+		for (int i=0; i<datos.size();i++) {
+			suma=suma+Math.cos(datos.get(i)*datos.get(i));
+		}
+		return suma;
+	}
+	
+	public static Double getSumatoriaDobleCoseno(ArrayList<Double> datosx1, ArrayList<Double> datosx2) {	
+		Double suma= 0.0;
+		for (int i=0; i<datosx1.size();i++) {
+			suma=suma+Math.cos(datosx1.get(i)*datosx2.get(i));
+		}
+		return suma;
+	}
+	
+	public static Double getSumatoriaDobleSeno(ArrayList<Double> datosx1, ArrayList<Double> datosx2) {	
+		Double suma= 0.0;
+		for (int i=0; i<datosx1.size();i++) {
+			suma=suma+Math.sin(datosx1.get(i)*datosx2.get(i));
+		}
+		return suma;
+	}
+	
 	public static Double getPromedio(ArrayList<Double> datos) {	
 		Double suma= 0.0;
 		for (int i=0; i<datos.size();i++) {
@@ -42,7 +101,6 @@ public class Operaciones {
 		}
 		return suma/datos.size();
 	}
-	
 	
 	public static Double getSumatoriaDatoAlCuadrado(ArrayList<Double> datos) {
 		Double suma= 0.0;
@@ -117,13 +175,22 @@ public class Operaciones {
 		
 	}
 	
+	
+	
+	
 
 	public static void informeEjercicio3(ArrayList<Double> datosy, ArrayList<Double> datosx1) {	
-				
 		System.out.println("Sistema de Ecuaciones");
 		System.out.println("x^3+16131y+z = 80.10\n" + "x^3+7146447y+16131z = 12192114.8986\n" + "x^3+16131y+z = 80.10");
 		System.out.println("Sistema sin solución");
-		
+		System.out.println();		
+	}
+	
+	public static void informeEjercicio4(ArrayList<Double> datosy, ArrayList<Double> datosx1, ArrayList<Double> datosx2) {
+		System.out.println("Alfa0 : " + getAlfa0Ejercicio4(datosy, datosx1, datosx2));
+		System.out.println("Alfa1 : " + getAlfa1Ejercicio4(datosy, datosx1, datosx2));
+		System.out.println();	
+		System.out.println("y = " + getAlfa0Ejercicio4(datosy, datosx1, datosx2)+ " sen(x1) + " + getAlfa1Ejercicio4(datosy, datosx1, datosx2)+" cos(x2)");
 		System.out.println();		
 	}
 	
