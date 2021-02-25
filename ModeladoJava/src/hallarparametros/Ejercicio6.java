@@ -14,13 +14,12 @@ public class Ejercicio6 {
 	
 	public static void main(String[] args) throws Exception {
 		readDataFromCsv();
-		Operaciones.informe(promedioNotas, edad, "Promedio Notas", "Edad");		
-		Operaciones.informe(promedioNotas, edad, "Promedio Notas", "Edad");		
-		Operaciones.informe(promedioNotas, numeroMaterias, "Promedio Notas", "Numero Materias");
-		Operaciones.informe(promedioNotas, horasEstudio, "Promedio Notas", "Horas de Estudio");
-		Operaciones.informe(promedioNotas, recreo, "Promedio Notas", "Recreo");
-		Operaciones.informe(promedioNotas, numeroAmigos, "Promedio Notas", "Nu]mero Amigos");
-	
+		Operaciones.informeEjercicio6(promedioNotas, edad, "Promedio Notas", "Edad");		
+		Operaciones.informeEjercicio6(promedioNotas, edad, "Promedio Notas", "Edad");		
+		Operaciones.informeEjercicio6(promedioNotas, numeroMaterias, "Promedio Notas", "Numero Materias");
+		Operaciones.informeEjercicio6(promedioNotas, horasEstudio, "Promedio Notas", "Horas de Estudio");
+		Operaciones.informeEjercicio6(promedioNotas, recreo, "Promedio Notas", "Recreo");
+		Operaciones.informeEjercicio6(promedioNotas, numeroAmigos, "Promedio Notas", "Nu]mero Amigos");
 	}
 	
 	public static void readDataFromCsv() throws Exception {
@@ -36,6 +35,5 @@ public class Ejercicio6 {
 			numeroAmigos.add(Double.parseDouble(row[5]));
 		}
 		sc.close();
-	}
-	
+	}	
 }
