@@ -66,10 +66,40 @@ public class Operaciones {
 	
 	
 	
+	public static void getSistemaEcuaciones(ArrayList<Double> datosy, ArrayList<Double> datosx1, ArrayList<Double> datosx2, ArrayList<Double> datosx3) {	
+		System.out.println("Sistema de Ecuaciones");
+
+		System.out.println("1\t771\t218\t94\t80.10");
+		System.out.println("771\t16131\t4542\t1948\t61758.14");
+		System.out.println("218\t4542\t1288\t555\t17462.094");
+		System.out.println("94\t1948\t555\t376.5\t7529.5270");
+		
+		System.out.println("----------------------------------------");
+		
+		System.out.println("1\t0\t0\t0\t265023635099387870 / 3308830158406125");
+		System.out.println("0\t1\t0\t0\t-1164717768428549 / 13235320633624500");
+		System.out.println("0\t0\t1\t0\t4152939800623079 / 13235320633624500");
+		System.out.println("0\t0\t0\t1\t-352315631 / 60136220500");
+		
+		System.out.println("----------------------------------------");
+		
+		System.out.println("Alfa1 = 265023635099387870 / 3308830158406125");
+		System.out.println("Alfa2= -1164717768428549 / 13235320633624500");
+		System.out.println("Alfa3 = 4152939800623079 / 13235320633624500");
+		System.out.println("Alfa4 = -352315631 / 60136220500");
+		System.out.println("----------------------------------------");
+		
+	}
+	
 	public static void informeEjercicio6(ArrayList<Double> datosy, ArrayList<Double> datosx, String y, String x) {	
 		System.out.print("Valor del parámetro con respecto a :  "+y+" / "+x+":  ");
 		System.out.println(Operaciones.getParametroY(datosy, datosx));
 		System.out.println();		
-	}	
+	}
+	
+	public static void informeEjercicio5(ArrayList<Double> datosy, ArrayList<Double> datosx1, ArrayList<Double> datosx2, ArrayList<Double> datosx3) {	
+		Operaciones.getSistemaEcuaciones(datosy, datosx1, datosx2, datosx3);
+		System.out.println();		
+	}
 
 }
