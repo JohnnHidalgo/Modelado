@@ -1,6 +1,7 @@
 package hallarparametros;
 
 import java.util.ArrayList;
+ 	
 
 public class Operaciones {
 	
@@ -162,6 +163,31 @@ public class Operaciones {
 		return suma;
 	}	
 	
+	
+
+	public static Double getCovarianza(ArrayList<Double> datosy, ArrayList<Double> datosx) {	
+		Double suma= 0.0;
+		suma = (getSumatoriaDeDosVariables(datosy,datosx)/datosx.size())-(getPromedio(datosy)*getPromedio(datosx));
+		return suma;
+	}
+	
+	
+	public static Double getDesviacionTipica(ArrayList<Double> datos) {	
+		Double suma= 0.0;
+		Double operacion = (getSumatoriaDatoAlCuadrado(datos)/datos.size())-(getPromedio(datos)*getPromedio(datos));
+		suma = Math.sqrt(operacion);
+		
+		return suma;
+	}
+	
+	
+	public static Double getCorrelacion(ArrayList<Double> datosy, ArrayList<Double> datosx) {	
+		Double suma= 0.0;
+		suma = (getCovarianza(datosy, datosx))/(getDesviacionTipica(datosx)*getDesviacionTipica(datosy));
+		return suma;
+	}
+	
+	
 	public static void getSistemaEcuaciones(ArrayList<Double> datosy, ArrayList<Double> datosx1, ArrayList<Double> datosx2, ArrayList<Double> datosx3) {	
 		System.out.println("Sistema de Ecuaciones");
 
@@ -196,6 +222,13 @@ public class Operaciones {
 		System.out.println("y = 1 / " + getAlfa0Ejercicio2(datosy, datosx1)+ "  + " + getAlfa1Ejercicio2(datosy, datosx1)+" x1");
 		System.out.println();	
 		System.out.println();		
+		
+		System.out.print("Coeficiente de Correlacion Lineal :  ");
+		System.out.println(getCorrelacion(datosy, datosx1));
+		System.out.print("Coeficiente de R cuadrado :  ");
+		System.out.println(getCorrelacion(datosy, datosx1)*getCorrelacion(datosy, datosx1));
+		System.out.println();
+		System.out.println();
 	}
 	
 
@@ -204,6 +237,12 @@ public class Operaciones {
 		System.out.println("x^3+16131y+z = 80.10\n" + "x^3+7146447y+16131z = 12192114.8986\n" + "x^3+16131y+z = 80.10");
 		System.out.println("Sistema sin solución");
 		System.out.println();		
+		System.out.print("Coeficiente de Correlacion Lineal :  ");
+		System.out.println(getCorrelacion(datosy, datosx1));
+		System.out.print("Coeficiente de R cuadrado :  ");
+		System.out.println(getCorrelacion(datosy, datosx1)*getCorrelacion(datosy, datosx1));
+		System.out.println();
+		System.out.println();
 	}
 	
 	public static void informeEjercicio4(ArrayList<Double> datosy, ArrayList<Double> datosx1, ArrayList<Double> datosx2) {
@@ -212,17 +251,35 @@ public class Operaciones {
 		System.out.println();	
 		System.out.println("y = " + getAlfa0Ejercicio4(datosy, datosx1, datosx2)+ " sen(x1) + " + getAlfa1Ejercicio4(datosy, datosx1, datosx2)+" cos(x2)");
 		System.out.println();		
+		System.out.print("Coeficiente de Correlacion Lineal :  ");
+		System.out.println(getCorrelacion(datosy, datosx1));
+		System.out.print("Coeficiente de R cuadrado :  ");
+		System.out.println(getCorrelacion(datosy, datosx1)*getCorrelacion(datosy, datosx1));
+		System.out.println();
+		System.out.println();
 	}
 	
 	public static void informeEjercicio5(ArrayList<Double> datosy, ArrayList<Double> datosx1, ArrayList<Double> datosx2, ArrayList<Double> datosx3) {	
 		Operaciones.getSistemaEcuaciones(datosy, datosx1, datosx2, datosx3);
 		System.out.println();		
+		System.out.print("Coeficiente de Correlacion Lineal :  ");
+		System.out.println(getCorrelacion(datosy, datosx1));
+		System.out.print("Coeficiente de R cuadrado :  ");
+		System.out.println(getCorrelacion(datosy, datosx1)*getCorrelacion(datosy, datosx1));
+		System.out.println();
+		System.out.println();
 	}
 
 	public static void informeEjercicio6(ArrayList<Double> datosy, ArrayList<Double> datosx, String y, String x) {	
 		System.out.println(Operaciones.getParametroY(datosy, datosx));
 		System.out.println("y = " + Operaciones.getSumatoriaDeDosVariables(datosy,datosx)+ " / "+ Operaciones.getSumatoriaDatoAlCuadrado(datosx));
-		System.out.println();		
+		System.out.println();	
+		System.out.print("Coeficiente de Correlacion Lineal :  ");
+		System.out.println(getCorrelacion(datosy, datosx));
+		System.out.print("Coeficiente de R cuadrado :  ");
+		System.out.println(getCorrelacion(datosy, datosx)*getCorrelacion(datosy, datosx));
+		System.out.println();
+		System.out.println();
 	}
 	
 	public static void informeEjercicio7(ArrayList<Double> datosy, ArrayList<Double> datosx1, ArrayList<Double> datosx2) {
@@ -230,7 +287,13 @@ public class Operaciones {
 		System.out.println("B2 : " + getB2(datosy, datosx1, datosx2));
 		System.out.println();	
 		System.out.println("y = " + getB1(datosy, datosx1, datosx2)+ " x1" + getB2(datosy, datosx1, datosx2)+" x2");
-		System.out.println();		
+		System.out.println();	
+		System.out.print("Coeficiente de Correlacion Lineal :  ");
+		System.out.println(getCorrelacion(datosy, datosx1));
+		System.out.print("Coeficiente de R cuadrado :  ");
+		System.out.println(getCorrelacion(datosy, datosx1)*getCorrelacion(datosy, datosx1));
+		System.out.println();
+		System.out.println();
 	}
 	
 	public static void informeEjercicio8(ArrayList<Double> datosy, ArrayList<Double> datosx1, ArrayList<Double> datosx2) {
@@ -238,7 +301,13 @@ public class Operaciones {
 		System.out.println("Alfa2 : " + getAlfa2(datosy, datosx1, datosx2));
 		System.out.println();	
 		System.out.println("e ^ y = " + "ln("+getAlfa1(datosy, datosx1, datosx2)+ " x1 " + getAlfa2(datosy, datosx1, datosx2)+" x2 )");
-		System.out.println();			
+		System.out.println();		
+		System.out.print("Coeficiente de Correlacion Lineal :  ");
+		System.out.println(getCorrelacion(datosy, datosx1));
+		System.out.print("Coeficiente de R cuadrado :  ");
+		System.out.println(getCorrelacion(datosy, datosx1)*getCorrelacion(datosy, datosx1));
+		System.out.println();
+		System.out.println();
 	}
 	
 }
