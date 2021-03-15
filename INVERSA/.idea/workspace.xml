@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3e57ab63-cd17-4683-bce7-615389a60d3d" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Ype9OyFVAVhsj0Y5cseOg40ud9" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="findjar.last.used.dir" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../arqui de software/ProyectoFinalBI/Proyecto BIAS/BI-AS-app-backend" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="copyright" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ASUS\Desktop\septimo semeste\MODELADO\PRGGRAMAS\JAVA PROG\INVERSA" />
+      <recent name="C:\Users\ASUS\Desktop\septimo semeste\MODELADO\PRGGRAMAS\JAVA PROG\INVERSA\lib" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.DistribucionUniforme">
+    <configuration name="DistribucionLogNormal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DistribucionNormal.DistribucionLogNormal" />
+      <module name="INVERSA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DistribucionNormal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DistribucionTriangular" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DistribucionNormal.DistribucionTriangular" />
+      <module name="INVERSA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DistribucionNormal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DistribucionUniforme" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DistribucionNormal.DistribucionUniforme" />
+      <module name="INVERSA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DistribucionNormal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Sumatoria1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ModeladoExamen.Sumatoria1" />
+      <module name="INVERSA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ModeladoExamen.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="distribucionNormal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DistribucionNormal.distribucionNormal" />
+      <module name="INVERSA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DistribucionNormal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.DistribucionUniforme" />
+        <item itemvalue="Application.distribucionNormal" />
+        <item itemvalue="Application.DistribucionTriangular" />
+        <item itemvalue="Application.DistribucionLogNormal" />
+        <item itemvalue="Application.Sumatoria1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3e57ab63-cd17-4683-bce7-615389a60d3d" name="Default Changelist" comment="" />
+      <created>1583643810124</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583643810124</updated>
+      <workItem from="1583643815311" duration="715000" />
+      <workItem from="1583695037359" duration="3609000" />
+      <workItem from="1584055945633" duration="2585000" />
+      <workItem from="1584127213949" duration="14138000" />
+      <workItem from="1584200497442" duration="10261000" />
+      <workItem from="1584664258936" duration="4752000" />
+      <workItem from="1584812380933" duration="8262000" />
+      <workItem from="1584886933800" duration="16836000" />
+      <workItem from="1585052497858" duration="1916000" />
+      <workItem from="1585149583146" duration="3718000" />
+      <workItem from="1585258116727" duration="1028000" />
+      <workItem from="1585266305952" duration="3759000" />
+      <workItem from="1585520982524" duration="6073000" />
+      <workItem from="1585570990196" duration="3306000" />
+      <workItem from="1585612763247" duration="12956000" />
+      <workItem from="1585655723751" duration="6097000" />
+      <workItem from="1585827190076" duration="597000" />
+      <workItem from="1585837004273" duration="3540000" />
+      <workItem from="1585855687218" duration="6256000" />
+      <workItem from="1585867002762" duration="438000" />
+      <workItem from="1585869993502" duration="6800000" />
+      <workItem from="1586212873934" duration="1047000" />
+      <workItem from="1586220837779" duration="969000" />
+      <workItem from="1586651542033" duration="19427000" />
+      <workItem from="1586780167850" duration="3461000" />
+      <workItem from="1586863336092" duration="5341000" />
+      <workItem from="1586899799759" duration="643000" />
+      <workItem from="1587037952228" duration="4771000" />
+      <workItem from="1587065222849" duration="15306000" />
+      <workItem from="1587136498868" duration="1229000" />
+      <workItem from="1587384310813" duration="2260000" />
+      <workItem from="1587470650874" duration="4166000" />
+      <workItem from="1587606342058" duration="12126000" />
+      <workItem from="1587652681542" duration="27878000" />
+      <workItem from="1587755337154" duration="6609000" />
+      <workItem from="1587988737075" duration="3832000" />
+      <workItem from="1588256166078" duration="18697000" />
+      <workItem from="1588535237500" duration="7791000" />
+      <workItem from="1588589853580" duration="4033000" />
+      <workItem from="1588641222968" duration="9540000" />
+      <workItem from="1588676526931" duration="5243000" />
+      <workItem from="1588722876793" duration="3000" />
+      <workItem from="1588861878871" duration="2424000" />
+      <workItem from="1588891480820" duration="5088000" />
+      <workItem from="1588927510429" duration="25340000" />
+      <workItem from="1589129042348" duration="9334000" />
+      <workItem from="1589176109155" duration="3967000" />
+      <workItem from="1589197383373" duration="5606000" />
+      <workItem from="1589284224806" duration="3902000" />
+      <workItem from="1589745651610" duration="16539000" />
+      <workItem from="1589850511289" duration="1758000" />
+      <workItem from="1590100614487" duration="1197000" />
+      <workItem from="1590266092087" duration="1509000" />
+      <workItem from="1590405679492" duration="1254000" />
+      <workItem from="1590456174360" duration="1393000" />
+      <workItem from="1590492757039" duration="2030000" />
+      <workItem from="1590522531926" duration="3969000" />
+      <workItem from="1590603313556" duration="7962000" />
+      <workItem from="1590628124583" duration="14100000" />
+      <workItem from="1590644210040" duration="119000" />
+      <workItem from="1590706015557" duration="1747000" />
+      <workItem from="1590709758614" duration="3344000" />
+      <workItem from="1590731275101" duration="653000" />
+      <workItem from="1590753469798" duration="661000" />
+      <workItem from="1590853876843" duration="22690000" />
+      <workItem from="1590889098026" duration="713000" />
+      <workItem from="1590906545752" duration="2729000" />
+      <workItem from="1590930131520" duration="8869000" />
+      <workItem from="1590953376340" duration="681000" />
+      <workItem from="1590954892045" duration="2043000" />
+      <workItem from="1590966982394" duration="8157000" />
+      <workItem from="1591011005595" duration="2353000" />
+      <workItem from="1591036223895" duration="699000" />
+      <workItem from="1591100678015" duration="3222000" />
+      <workItem from="1591291437081" duration="12782000" />
+      <workItem from="1591314940484" duration="2868000" />
+      <workItem from="1591350674878" duration="1515000" />
+      <workItem from="1591688995425" duration="8062000" />
+      <workItem from="1591724750455" duration="1304000" />
+      <workItem from="1593034420034" duration="11106000" />
+      <workItem from="1593098032230" duration="613000" />
+      <workItem from="1593132888792" duration="2254000" />
+      <workItem from="1593181382611" duration="11009000" />
+      <workItem from="1593210965517" duration="4342000" />
+      <workItem from="1600171190325" duration="114000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/InversaFadheva/InversaPrinicipa.java</url>
+          <line>542</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/TestTStudent/PruebaTStudent.java</url>
+          <line>135</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/DistribucionNormal/DistribucionGeometrica.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/RedesDePetri/RedDePetriSimple.java</url>
+          <line>109</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
